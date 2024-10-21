@@ -283,7 +283,8 @@ export function Hero() {
               width="640"
               height="800"
               frameBorder="0"
-              
+              marginHeight="0"
+              marginWidth="0"
               className="w-full max-w-xl"
             >
               Loading…
