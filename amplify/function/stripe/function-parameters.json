@@ -1,0 +1,33 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "stripeSecretKey",
+      "environmentVariableName": "STRIPE_SECRET_KEY"
+    },
+    {
+      "cloudFormationParameterName": "stripeRedirectUrl",
+      "environmentVariableName": "STRIPE_REDIRECT_URL"
+    },
+    {
+      "cloudFormationParameterName": "stripePriceId",
+      "environmentVariableName": "STRIPE_PRICE_ID"
+    },
+    {
+      "cloudFormationParameterName": "mriPriceId",
+      "environmentVariableName": "MRI_PRICE_ID"
+    },
+    {
+      "cloudFormationParameterName": "lumbarPriceId",
+      "environmentVariableName": "LUMBAR_PRICE_ID"
+    },
+    {
+      "cloudFormationParameterName": "futuresPriceId",
+      "environmentVariableName": "FUTURES_PRICE_ID"
+    },
+    {
+      "cloudFormationParameterName": "cervicalPriceId",
+      "environmentVariableName": "CERVICAL_PRICE_ID"
+    }
+  ]
+}

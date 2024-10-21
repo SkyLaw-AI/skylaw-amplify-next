@@ -1,0 +1,65 @@
+{
+  "permissions": {
+    "auth": {
+      "mriauth": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    },
+    "storage": {
+      "Claimaint:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "ReportGenerationCost:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "cognitoUserPool",
+      "environmentVariableName": "COGNITO_USER_POOL"
+    },
+    {
+      "cloudFormationParameterName": "openaiKey",
+      "environmentVariableName": "OPENAI_KEY"
+    },
+    {
+      "cloudFormationParameterName": "perPagePrice",
+      "environmentVariableName": "PER_PAGE_PRICE"
+    },
+    {
+      "cloudFormationParameterName": "stripeKey",
+      "environmentVariableName": "STRIPE_KEY"
+    },
+    {
+      "cloudFormationParameterName": "azureOpenaiApiKey",
+      "environmentVariableName": "AZURE_OPENAI_API_KEY"
+    },
+    {
+      "cloudFormationParameterName": "azureOpenaiEndpoint",
+      "environmentVariableName": "AZURE_OPENAI_ENDPOINT"
+    },
+    {
+      "cloudFormationParameterName": "azureOpenaiAssistantId",
+      "environmentVariableName": "AZURE_OPENAI_ASSISTANT_ID"
+    },
+    {
+      "cloudFormationParameterName": "apiMriReportcosttableName",
+      "environmentVariableName": "API_MRI_REPORTCOSTTABLE_NAME"
+    },
+    {
+      "cloudFormationParameterName": "stripeCustomerTableName",
+      "environmentVariableName": "STRIPE_CUSTOMER_TABLE_NAME"
+    }
+  ]
+}

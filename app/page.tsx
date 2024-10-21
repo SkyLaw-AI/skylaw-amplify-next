@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from "react";
-import { generateClient } from "aws-amplify/data";
 
 import "./../app/app.css";
 import { Amplify } from "aws-amplify";
@@ -20,8 +19,6 @@ import {
 } from '@/components/ui/accordion'
 
 Amplify.configure(outputs);
-
-const client = generateClient();
 
 interface SignupFormProps {
   onClose: () => void

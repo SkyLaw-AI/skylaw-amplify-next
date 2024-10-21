@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap'); */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top-bar {
+            background-color: #0D1A26;
+            color: #406ABF;
+            padding: 32px 10px;
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 42px;
+        }
+        .top-bar h1 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 3.05px;
+        }
+        .container {
+            margin: 60px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .footer {
+            text-align: left;
+            margin-bottom: 60px;
+        }
+        .content {
+            margin-bottom: 60px;
+        }
+        .bill-to, .patient-info {
+            margin-bottom: 60px;
+        }
+        .bill-to span, .patient-info span {
+            display: block;
+        }
+        /* .billed-by {
+            margin-bottom: 60px;
+            display: block;
+        }
+        .billed-by span{
+            display: block;
+        } */
+        .patient-info span {
+            margin-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <h1>CDZ SCANS</h1>
+</div>
+
+<div class="container">
+    <div class="header">
+        <p>Invoice Date: invoice_date</p>
+        <p>SkyLaw AI Technologies ©</p>
+    </div>
+
+    <div class="bill-to">
+        <p>Bill to:</p>
+        <span>billing_name</span>
+        <!-- <span>organization_name</span> -->
+        <span><a href="mailto:user_email">billing_email</a></span>
+        <!-- <span>billing_address</span> -->
+    </div>
+
+    <div class="content">
+        <table>
+            <tr>
+                <!-- <th>Patient Name</th> -->
+                <th>File Name</th>
+                <th>Service Used</th>
+                <th>Cost</th>
+                <th>Time of Upload</th>
+            </tr>
+            <tr>
+                <!-- <td>patient_name</td> -->
+                <td>file_name</td>
+                <td>MRI Interpreter</td>
+                <td>mri_cost</td>
+                <td>upload_time</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Total: total_cost</p>
+        <p>Thank you for trusting SkyLaw. If you have any questions regarding this bill, please email:  <a href="mailto:John@SkyLaw.ai"> John@SkyLaw.ai </a></p>
+    </div>
+</div>
+
+</body>
+</html>

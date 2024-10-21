@@ -1,0 +1,91 @@
+{
+  "permissions": {
+    "auth": {
+      "mriauth": [
+        "create",
+        "read",
+        "update"
+      ]
+    },
+    "storage": {
+      "stripecustomers": [
+        "read"
+      ],
+      "Claimaint:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "ReportGenerationCost:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "cognitoUserPool",
+      "environmentVariableName": "COGNITO_USER_POOL"
+    },
+    {
+      "cloudFormationParameterName": "stripeKey",
+      "environmentVariableName": "STRIPE_KEY"
+    },
+    {
+      "cloudFormationParameterName": "openaiKey",
+      "environmentVariableName": "OPENAI_KEY"
+    },
+    {
+      "cloudFormationParameterName": "perPagePrice",
+      "environmentVariableName": "PER_PAGE_PRICE"
+    },
+    {
+      "cloudFormationParameterName": "apiMriClaimainttableArn",
+      "environmentVariableName": "API_MRI_CLAIMAINTTABLE_ARN"
+    },
+    {
+      "cloudFormationParameterName": "apiMriClaimainttableName",
+      "environmentVariableName": "API_MRI_CLAIMAINTTABLE_NAME"
+    },
+    {
+      "cloudFormationParameterName": "apiMriReportcosttableName",
+      "environmentVariableName": "API_MRI_REPORTCOSTTABLE_NAME"
+    },
+    {
+      "cloudFormationParameterName": "stripeCustomerTableName",
+      "environmentVariableName": "STRIPE_CUSTOMER_TABLE_NAME"
+    },
+    {
+      "cloudFormationParameterName": "azureOpenaiAssistantId",
+      "environmentVariableName": "AZURE_OPENAI_ASSISTANT_ID"
+    },
+    {
+      "cloudFormationParameterName": "azureOpenaiEndpoint",
+      "environmentVariableName": "AZURE_OPENAI_ENDPOINT"
+    },
+    {
+      "cloudFormationParameterName": "azureOpenaiApiKey",
+      "environmentVariableName": "AZURE_OPENAI_API_KEY"
+    },
+    {
+      "cloudFormationParameterName": "lumbarPriceId",
+      "environmentVariableName": "LUMBAR_PRICE_ID"
+    },
+    {
+      "cloudFormationParameterName": "cervicalPriceId",
+      "environmentVariableName": "CERVICAL_PRICE_ID"
+    },
+    {
+      "cloudFormationParameterName": "mriPriceId",
+      "environmentVariableName": "MRI_PRICE_ID"
+    },
+    {
+      "cloudFormationParameterName": "futuresPriceId",
+      "environmentVariableName": "FUTURES_PRICE_ID"
+    }
+  ]
+}

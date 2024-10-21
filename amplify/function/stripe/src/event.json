@@ -1,0 +1,11 @@
+{
+  "httpMethod": "POST",
+  "path": "/stripe",
+  "queryStringParameters": {
+    "limit": "10"
+  },
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\"email\":\"lukesamkharadze@icloud.com\", \"redirectUrl\":\"https://stripe.com\", \"priceId\":\"CERVICAL\"}"
+}
